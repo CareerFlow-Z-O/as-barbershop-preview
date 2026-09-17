@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AS Barbershop — Ljubljana</title>
+  <meta name="description" content="AS Barbershop Ljubljana — precizno striženje, urejanje brade in premium barber izkušnja. Rezerviraj termin online." />
+  <meta name="theme-color" content="#090909" />
+  <style>
+    :root{--bg:#080808;--panel:#111;--soft:#1a1a1a;--text:#f7f5ef;--muted:#a8a8a8;--line:#2a2a2a;--accent:#d5b26f;--accent2:#f0d49a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 0%,#241b0f 0%,#0b0b0b 28%,#070707 64%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92vw);margin:auto}.nav{position:sticky;top:0;z-index:30;background:rgba(8,8,8,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .navin{display:flex;align-items:center;justify-content:space-between;min-height:76px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em}.mark{width:42px;height:42px;border:1px solid #5e4a26;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#1c1710,#0d0d0d);color:var(--accent2)}
+    .links{display:flex;gap:24px;color:#c7c7c7;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 18px;border-radius:999px;border:1px solid #6d562e;background:linear-gradient(135deg,#d0aa61,#f1d69c);color:#15100a;font-weight:850;box-shadow:0 14px 36px rgba(213,178,111,.12)}.btn.ghost{background:transparent;color:var(--text);border-color:#343434;box-shadow:none}
+    .hero{padding:88px 0 52px;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent2);font-weight:800}.hero h1{font-size:clamp(52px,8vw,102px);line-height:.87;margin:16px 0 24px;letter-spacing:-.065em;max-width:800px}.hero h1 span{color:var(--accent2)}.lead{font-size:19px;line-height:1.65;color:#c7c7c7;max-width:660px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:35px;color:#989898;font-size:13px}.meta strong{display:block;color:white;font-size:19px;margin-bottom:4px}
+    .heroCard{min-height:560px;border:1px solid #2b2b2b;border-radius:34px;padding:24px;background:linear-gradient(155deg,rgba(33,25,14,.98),rgba(12,12,12,.96) 50%,rgba(18,18,18,.98));position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.5)}.heroCard:before{content:"AS";position:absolute;right:-18px;bottom:-40px;font-size:260px;font-weight:1000;letter-spacing:-.12em;color:rgba(240,212,154,.045)}
+    .phone{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(3deg);width:min(300px,78%);height:500px;border-radius:42px;border:8px solid #252525;background:#050505;box-shadow:0 30px 70px #000;padding:18px;overflow:hidden}.notch{width:92px;height:22px;border-radius:20px;background:#161616;margin:0 auto 22px}.phone .mini{border:1px solid #242424;background:linear-gradient(160deg,#15120d,#090909);border-radius:24px;padding:20px;height:420px}.miniLogo{font-size:28px;font-weight:950;letter-spacing:.03em}.miniLine{height:1px;background:#262626;margin:18px 0}.serviceMini{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #222;color:#d8d8d8;font-size:13px}.serviceMini b{color:#f0d49a}.miniBtn{margin-top:24px;text-align:center;background:linear-gradient(135deg,#d0aa61,#efd394);color:#17110a;padding:13px;border-radius:999px;font-weight:900}.floating{position:absolute;padding:14px 16px;border-radius:18px;border:1px solid #2d2d2d;background:rgba(15,15,15,.88);backdrop-filter:blur(14px);font-size:13px;color:#d8d8d8}.f1{top:34px;right:28px}.f2{bottom:34px;left:24px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#71d68a;margin-right:8px;box-shadow:0 0 18px rgba(113,214,138,.55)}
+    section{padding:78px 0}.sectionHead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.sectionHead h2{font-size:clamp(38px,5vw,66px);line-height:.95;letter-spacing:-.05em;margin:8px 0 0}.sectionHead p{max-width:510px;color:#9f9f9f;line-height:1.6}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{border:1px solid #282828;border-radius:26px;background:linear-gradient(160deg,#141414,#0d0d0d);padding:24px;min-height:220px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#5b482a}.num{font-size:12px;color:#7f6a46;font-weight:900;letter-spacing:.16em}.card h3{font-size:22px;margin:28px 0 8px}.card p{color:#929292;line-height:1.55;font-size:14px}.price{margin-top:24px;font-size:22px;font-weight:950;color:var(--accent2)}
+    .split{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px}.infoBox,.bookingBox{border:1px solid #292929;border-radius:30px;padding:30px;background:#0e0e0e}.infoBox{background:linear-gradient(145deg,#19140e,#0d0d0d 65%)}.bigstat{font-size:60px;font-weight:950;letter-spacing:-.05em;color:var(--accent2)}.small{color:#979797;line-height:1.65}.rows{margin-top:20px}.row{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid #242424}.row span:first-child{color:#8e8e8e}.bookingBox h3{font-size:34px;margin:0 0 10px}.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}.slot{padding:13px;border:1px solid #303030;border-radius:14px;text-align:center;color:#c5c5c5;background:#111}.booknote{font-size:12px;color:#737373;margin-top:12px}
+    .quote{border:1px solid #292929;border-radius:30px;padding:42px;background:linear-gradient(140deg,#0f0f0f,#15110c);font-size:clamp(28px,4vw,52px);line-height:1.12;letter-spacing:-.04em}.quote span{color:var(--accent2)}
+    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.contactBox{border:1px solid #292929;border-radius:30px;padding:34px;background:#0f0f0f}.contactBox h3{font-size:34px;margin:0 0 18px}.contactLine{padding:13px 0;border-bottom:1px solid #242424;color:#bababa}.contactLine b{color:white}.footer{padding:30px 0 40px;color:#777;font-size:13px;border-top:1px solid #202020}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:58px}.heroCard{min-height:500px}.services{grid-template-columns:1fr 1fr}.split,.contact{grid-template-columns:1fr}.sectionHead{display:block}.sectionHead p{margin-top:18px}}
+    @media(max-width:560px){.wrap{width:min(92vw,520px)}.hero h1{font-size:58px}.heroCard{min-height:450px}.phone{height:420px;width:260px}.phone .mini{height:342px}.services{grid-template-columns:1fr}.slots{grid-template-columns:1fr 1fr}.navin{min-height:68px}.btn{width:100%}.actions .btn{width:auto}.hero{padding-top:46px}.meta{gap:18px}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap navin">
+    <a class="brand" href="#top"><span class="mark">AS</span><span>AS BARBERSHOP</span></a>
+    <div class="links"><a href="#storitve">Storitve</a><a href="#rezervacija">Rezervacija</a><a href="#kontakt">Kontakt</a></div>
+    <a class="btn" href="https://www.fresha.com/a/as-barbershop-ljubljana-litijska-cesta-38-c3ztchzi?pId=1359018" target="_blank" rel="noopener">Rezerviraj termin ↗</a>
+  </div></nav>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Ljubljana · Štepanjsko naselje</div>
+        <h1>Sharp cut.<br><span>Real style.</span></h1>
+        <p class="lead">AS Barbershop je prostor za moške, ki želijo natančen rez, urejeno brado in samozavesten videz — brez kompliciranja. Izberi storitev in rezerviraj termin online.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.fresha.com/a/as-barbershop-ljubljana-litijska-cesta-38-c3ztchzi?pId=1359018" target="_blank" rel="noopener">Rezerviraj zdaj ↗</a>
+          <a class="btn ghost" href="#storitve">Poglej storitve</a>
+        </div>
+        <div class="meta"><div><strong>5.0</strong>ocena na Fresha</div><div><strong>196+</strong>ocen</div><div><strong>Online</strong>takojšnja rezervacija</div></div>
+      </div>
+      <div class="heroCard">
+        <div class="floating f1"><span class="dot"></span>Online booking aktiven</div>
+        <div class="floating f2">Litijska cesta 38 · Ljubljana</div>
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="mini"><div class="miniLogo">AS<br>BARBERSHOP</div><div class="miniLine"></div>
+            <div class="serviceMini"><span>Striženje</span><b>od 15 €</b></div>
+            <div class="serviceMini"><span>Brada</span><b>od 12 €</b></div>
+            <div class="serviceMini"><span>Hair + Beard</span><b>od 25 €</b></div>
+            <div class="serviceMini"><span>Hot towel shave</span><b>20 €</b></div>
+            <div class="miniBtn">REZERVIRAJ TERMIN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="storitve">
+      <div class="sectionHead"><div><div class="eyebrow">Storitve</div><h2>Fresh. Sharp.<br>AS.</h2></div><p>Pregleden izbor najbolj iskanih storitev. Končna cena se lahko razlikuje glede na izbranega barberja in aktualni Fresha cenik.</p></div>
+      <div class="services">
+        <article class="card"><div class="num">01 · HAIR</div><h3>Striženje</h3><p>Precizen rez in styling, prilagojen obliki obraza in tvojemu stilu.</p><div class="price">od 15 €</div></article>
+        <article class="card"><div class="num">02 · BEARD</div><h3>Urejanje brade</h3><p>Oblikovanje linij, krajšanje in čist finish za urejen videz.</p><div class="price">od 12 €</div></article>
+        <article class="card"><div class="num">03 · COMBO</div><h3>Striženje + brada</h3><p>Kompletna osvežitev las in brade v enem terminu.</p><div class="price">od 25 €</div></article>
+        <article class="card"><div class="num">04 · EXTRAS</div><h3>Hot towel shave</h3><p>Klasično britje z vročo brisačo za gladek in čist zaključek.</p><div class="price">20 €</div></article>
+      </div>
+    </section>
+
+    <section id="rezervacija">
+      <div class="split">
+        <div class="infoBox"><div class="eyebrow">Zakaj AS</div><div class="bigstat">5.0★</div><p class="small">Močna ocena, veliko preverjenih mnenj in enostavna online rezervacija. Vse, kar stranka potrebuje, da se hitro odloči in rezervira.</p>
+          <div class="rows"><div class="row"><span>Lokacija</span><b>Litijska cesta 38</b></div><div class="row"><span>Parkiranje</span><b>Na voljo</b></div><div class="row"><span>Javni prevoz</span><b>V bližini</b></div></div>
+        </div>
+        <div class="bookingBox"><div class="eyebrow">Rezervacija</div><h3>Izberi čas. Fresha potrdi.</h3><p class="small">Spodnji termini so vizualni primer. Gumb odpre uradni AS Barbershop Fresha profil, kjer vidiš aktualno razpoložljivost.</p>
+          <div class="slots"><div class="slot">10:00</div><div class="slot">11:30</div><div class="slot">13:00</div><div class="slot">15:30</div><div class="slot">17:00</div><div class="slot">19:00</div></div>
+          <a class="btn" style="width:100%" href="https://www.fresha.com/a/as-barbershop-ljubljana-litijska-cesta-38-c3ztchzi?pId=1359018" target="_blank" rel="noopener">Odpri uradne termine ↗</a><div class="booknote">Rezervacija poteka preko obstoječega Fresha sistema.</div>
+        </div>
+      </div>
+    </section>
+
+    <section><div class="quote">“No gimmicks. No fake luxury. <span>Real skill. Genuine style.</span>”</div></section>
+
+    <section id="kontakt">
+      <div class="contact">
+        <div class="contactBox"><div class="eyebrow">Kontakt</div><h3>Pridi po fresh look.</h3><div class="contactLine"><b>AS Barbershop</b></div><div class="contactLine">Litijska cesta 38, 1000 Ljubljana</div><div class="contactLine"><a href="tel:+38670658884">+386 70 658 884</a></div></div>
+        <div class="contactBox"><div class="eyebrow">Rezervacije</div><h3>Termin v nekaj klikih.</h3><p class="small">Aktualne storitve, barberje, cene in proste termine preveri neposredno v Fresha sistemu.</p><a class="btn" style="margin-top:14px;width:100%" href="https://www.fresha.com/a/as-barbershop-ljubljana-litijska-cesta-38-c3ztchzi?pId=1359018" target="_blank" rel="noopener">Fresha booking ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footerin"><span>© 2026 AS Barbershop · Preview concept</span><span>Website concept by LNK Digital</span></div></footer>
+</body>
+</html>
